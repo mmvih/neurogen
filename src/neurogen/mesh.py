@@ -368,7 +368,7 @@ def generate_mesh_dataframe(vertices, minvertices, lod=0):
     while reachlevel == False:
         # define the number of nodes, the number of times the mesh gets sliced 
             # in the level of detail
-        counts[lod] = {}
+        dict_count[lod] = {}
         numsplits = int((2**lod)+1)
         xsplits = np.linspace(start=minvertex[0], stop=maxvertex[0], num=numsplits)
         ysplits = np.linspace(start=minvertex[1], stop=maxvertex[1], num=numsplits)
